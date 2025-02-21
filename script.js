@@ -72,6 +72,7 @@ function closeMusic() {
     helper("subScreen", 0);
 }
 
+
 function switchToMusicPage2() {
     helper("musicPage1", 0);
     helper("musicPage2", 1);
@@ -84,21 +85,50 @@ function switchToMusicPage1() {
 }
 
 
-function switchToSecretPage2() {
-    helper("secretPage", 0);
-    helper("secretPage2", 1);
-    
-}
 
 function switchToSecretPage() {
     helper("secretPage", 1);
     helper("secretPage2", 0);
+    helper("secretPage3", 0);
+    helper("secretPage4", 0);
+    helper("secretPage5", 0);
+    
+}
+
+function switchToSecretPage2() {
+    helper("secretPage", 0);
+    helper("secretPage2", 1);
+    helper("secretPage3", 0);
+    helper("secretPage4", 0);
+    helper("secretPage5", 0);
     
 }
 
 
-
-
+function switchToSecretPage3() {
+    helper("secretPage", 0);
+    helper("secretPage2", 0);
+    helper("secretPage3", 1);
+    helper("secretPage4", 0);
+    helper("secretPage5", 0);
+    
+}
+function switchToSecretPage4() {
+    helper("secretPage",0);
+    helper("secretPage2", 0);
+    helper("secretPage3", 0);
+    helper("secretPage4", 1);
+    helper("secretPage5", 0);
+    
+}
+function switchToSecretPage5() {
+    helper("secretPage",0);
+    helper("secretPage2", 0);
+    helper("secretPage3", 0);
+    helper("secretPage4", 0);
+    helper("secretPage5", 1);
+    
+}
 
 
 function surprise() {
@@ -111,8 +141,7 @@ function openSite(link) {
 }
 
 function openSecretPage() {
-  
-    
+ 
     document.getElementById("appRow").style.display = "none";
     document.getElementById("subScreen").style.display = "block";
     document.getElementById("secretPage").style.display = "block"; // Show the secret folder
@@ -175,6 +204,9 @@ function checkAnswer(questionId, selectedAnswer) {
         if (correctAnswers >= 2) { // Adjust the passing score if needed
             unlockSecretPage();
             successPopup()
+
+            document.getElementById("completionMessage").style.display = "block";
+
         } else {
             failQuiz();
         }
