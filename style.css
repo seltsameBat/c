@@ -88,11 +88,11 @@ body, html {
 }
 
 .popupMessage {
-    background-color: #e4ff99;
+    background-color: #adff99;
     padding: 5px 2px 0px 5px;
     margin: 0px 25px 50px 25px;
     border-style: double;
-    border-color: #5c563d;
+    border-color: #7a7252;
     border-width: 5px;
     text-align: left;
     display: block;
@@ -103,7 +103,7 @@ body, html {
     padding: 10px;
     margin: 5px 5px 5px 0px;
     border-style: solid;
-    border-color: #ffe499;
+    border-color: #ffe799;
     text-align: center;
 }
 
@@ -365,7 +365,7 @@ body, html {
     line-height: 1.6;
     color: #4b4b4b; /* Dark, but not too harsh */
     font-size: 1.2rem;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -488,6 +488,7 @@ body, html {
 
 .row .col-8 {
     font-size: 1.5rem; /* Adjusts font size on smaller screens */
+    width: 100%;
 }
 #secretPage, #secretPage2,#secretPage3, #secretPage4, #secretPage5{
     width: 95%;
